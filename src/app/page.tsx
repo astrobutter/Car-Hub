@@ -3,12 +3,9 @@ import { HomeProps } from "./types";
 import { fuels, yearsOfProduction } from "./constants";
 import CarCard from "./components/CarCard";
 import ShowMore from "./components/ShowMore";
-// import SearchBar from "./components/SearchBar";
 import CustomFilter from "./components/CustomFilter";
 import Hero from "./components/Hero";
 import SearchBar from "./components/SearchBar";
-// import SearchBar from "./components/SearchBar";
-// import { CarCard, ShowMore, SearchBar, CustomFilter, Hero } fr';
 
 export default async function Home({ searchParams }: HomeProps) {
 
@@ -19,10 +16,8 @@ export default async function Home({ searchParams }: HomeProps) {
     limit: searchParams.limit || 10,
     model: searchParams.model || "",
   });
-  console.log(allCars);
 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
-
   return (
     <main className='overflow-hidden'>
       <Hero />
@@ -30,7 +25,7 @@ export default async function Home({ searchParams }: HomeProps) {
       <div className='mt-12 padding-x padding-y max-width' id='discover'>
         <div className='home__text-container'>
           <h1 className='text-4xl font-extrabold'>Car Catalogue</h1>
-          <p>Explore out cars you might like</p>
+          <p>Check out the cars</p>
         </div>
 
         <div className='home__filters'>
