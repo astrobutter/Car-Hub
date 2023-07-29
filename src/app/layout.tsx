@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <head>
-      <link rel="icon" href="/icon-car.ico" />
+      <link rel="icon" href="/icon-car-blue.ico" />
       </head>
       <body className='relative'>
         <NavBar />
