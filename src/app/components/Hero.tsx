@@ -21,7 +21,7 @@ const Hero = () => {
         </h1>
 
         <p className="hero__subtitle">
-          Check any car's fuel mileage, drive train, transmission & more.
+          Check any car&#39;s fuel mileage, drive train, transmission & more.
         </p>
 
         <CustomButton
